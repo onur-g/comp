@@ -4,19 +4,19 @@ using namespace std;
 
 int main() {
     int n;
+
     cin >> n;
 
-    bool found = false;
+    if (n % 2 == 1) {
+        cout << -1 << endl;
+    } else {
+        cout << "2 1";
 
-    for (int i = 0; i < n; ++i) {
-        if () {
-            found = true;
+        for (int i = 3; i < n; i += 2) {
+            cout << " " << i + 1 << " " << i;
         }
+        cout << endl;
     }
 
-    if (!found) {
-        cout << -1;
-    }
-
-    cout << endl;
+    return 0;
 }
